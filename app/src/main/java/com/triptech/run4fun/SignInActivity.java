@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class SignInActivity extends AppCompatActivity {
 
@@ -19,6 +20,16 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(signInIntent);
+            }
+        });
+
+        TextView signUpText=findViewById(R.id.registerText);
+        final Intent signUpIntent=new Intent(this, SignUpActivity.class);
+        signUpText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(signUpIntent);
+                overridePendingTransition(R.anim.bottomtotop, R.anim.toptobottom);
             }
         });
 

@@ -46,7 +46,8 @@
         <activity android:name=".SportActivityMain" />
         <activity android:name="com.vass17.first.UnityPlayerActivity" />
         <activity android:name=".UnityTestActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignUpActivity"></activity>
     </application>
 
 </manifest>
